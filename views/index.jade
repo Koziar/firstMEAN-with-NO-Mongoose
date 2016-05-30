@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1= title
+    h2=usrname
+    p=exptime
+    a(href='/api/joke/random')
+        button(class="btn") Random joke
+    a(href='/api/jokes')
+        button(class="btn") All jokes
+    a(href='/api/addjoke')
+        button(class="btn") Add a new one

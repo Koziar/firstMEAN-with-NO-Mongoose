@@ -1,0 +1,25 @@
+extends layout
+
+block content
+    h1= title
+    p= count
+    //form(id="jokeform", method="post" action="/addjoke")
+    //    input(type="text", name="joke", size="80")
+    //    button(class="btn", type="submit") Submit!
+
+    //
+    //form(id="jokeform", method="post", action="api/joke")
+    //    label Add Joke:
+    //    input(type="text", name="joke", size="50")
+    //    input(type="submit", action="api/addjoke", value="Add")
+    //p
+    //    a(href='/api')
+    //        button(class="btn") << Back
+
+    form(id="jokeform", method="POST", action="/api/joke")
+        label Add Joke:
+        input(type="text", name="joke", size="50")
+        input(type="submit", value="Add")
+    p
+        a(href='/home')
+            button(class="btn") << Back

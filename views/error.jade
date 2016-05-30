@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    p
+        h1 Upsss, something went wrong!
+
+        h3= error.status
+        h3= message
+    //pre #{error.stack}

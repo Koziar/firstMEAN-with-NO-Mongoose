@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1= title
+    p(name="joke")= randomJ
+
+    p
+        a(href='/home')
+            button(class="btn") << Back
